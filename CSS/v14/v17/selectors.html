@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div, span{
+            background-color: red;
+        }
+
+        /* Class Selector */
+        .red{
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #green{
+            color: yellow;
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div > p{
+            background-color: yellow;
+            color: aqua;
+        }
+
+        /* Descendent Selector */
+        div p{
+            background-color: yellow;
+            color: brown;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: aqua;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="one">
+         
+            <p>this is one</p>
+            <p>this is two</p>
+       
+    </main>
+    <div>
+        It is a div
+        <article>
+            <p>
+                This is nice
+            </p>
+        </article>
+        
+
+    </div>
+
+    <a href="http://www.google.com">Go to Google</a>
+    <a href="http://www.facebook.com">Go to Facebook</a>
+    <a href="http://www.quora.com">Go to Quora</a>
+
+    <span>
+        It is a span
+    </span>
+
+    <p class="red">
+        Lorem ipsum dolor sit 
+        amet, consectetur 
+        adipisicing elit. Nulla,
+        deserunt.
+    </p>
+    <p id="green">
+        Lorem ipsum dolor sit amet.
+    </p>
+</body>
+</html>
